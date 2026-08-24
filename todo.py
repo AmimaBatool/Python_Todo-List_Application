@@ -2,6 +2,9 @@
 my_tasks = []   # List to store tasks
 
 
+#-----FUNCTION DEFINATIONS-----
+
+
 #Function to Add a New Task
 def add_task():
     task = input("Enter a new task: ")
@@ -26,15 +29,12 @@ def remove_task():
     if len(my_tasks) == 0:
             print("List is Empty! ")
     else:
-        try:
-            search_index = int(input("Enter the Task Number you want to remove from the list:")) - 1
-            if 0<= search_index < len(my_tasks):
-                removed_task = my_tasks.pop(search_index)
-                print(f"Task Removed:  {removed_task['Task']}")
-            else:
-                        print("Invalid Task Number...")
-        except ValueError:
-             print("Please Enter a valid Task number..")
+        search_index = int(input("Enter the Task Number you want to remove from the list:")) - 1
+        if 0<= search_index < len(my_tasks):
+            removed_task = my_tasks.pop(search_index)
+            print(f"Task Removed:  {removed_task['Task']}")
+        else:
+            print("Invalid Task Number...")
     print()
 
 
@@ -43,15 +43,12 @@ def mark_completed():
     if len(my_tasks) == 0:
             print("List is Empty! ")
     else:
-        try:
-            search_index = int(input("Enter the Task Number that you want to mark as completed:")) - 1
-            if 0<= search_index < len(my_tasks):
-                my_tasks[search_index]['Status'] = 'Completed'
-                print(f"Task {my_tasks[search_index]['Task']} has been marked as completed..")
-            else:
+        search_index = int(input("Enter the Task Number that you want to mark as completed:")) - 1
+        if 0<= search_index < len(my_tasks):
+            my_tasks[search_index]['Status'] = 'Completed'
+            print(f"Task {my_tasks[search_index]['Task']} has been marked as completed..")
+        else:
                 print("Invalid Task Number...")
-        except ValueError:
-            print("Please Enter a valid Task number..")
     print()
 
 
