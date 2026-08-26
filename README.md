@@ -16,10 +16,11 @@ Technologies Used:
 
 Python Concepts Used:
   1. List
-  2. Functions
-  3. Conditions
-  4. Loops
-  5. Error Handling
+  2. Dictionaries
+  3. Functions
+  4. Conditions
+  5. Loops
+  6. Error Handling
 
 How to Run:
   1. Download the project file.
@@ -38,6 +39,7 @@ https://github.com/AmimaBatool/Python_Todo-List_Application/blob/main/SampleOutp
 What I Learned:
    - I learned how to build a simple command line application using Python.
    - How to store and handle multiple tasks in list.
+   - How to use dictionary, according to requirements. 
    - How to create and use functions.
    - How to use loops and conditional statements.
    - How to handle basic user input and errors.
