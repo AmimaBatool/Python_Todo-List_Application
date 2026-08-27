@@ -20,7 +20,9 @@ Python Concepts Used:
   3. Functions
   4. Conditions
   5. Loops
-  6. Error Handling
+  6. User input
+  7. enumerate()
+  7. Error Handling
 
 How to Run:
   1. Download the project file.
