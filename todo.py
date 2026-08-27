@@ -1,12 +1,13 @@
+#=====To-Do List Appplication=====
+
 # List to store tasks
 my_tasks = []   # List to store tasks
 
 
 #-----FUNCTION DEFINATIONS-----
 
-
 #Function to Add a New Task
-def add_task():
+def add_task(): 
     task = input("Enter a new task: ")
     my_tasks.append({"Task": task, "Status": "Pending.."})
     print("New Task Added Successfully!")
